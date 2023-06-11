@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(178, 232, 239);
+    border-radius: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background: rgb(48, 34, 93);
+    background: linear-gradient(90deg, rgba(48, 34, 93, 1) 0%, rgba(19, 18, 60, 1) 50%, rgba(5, 4, 25, 1) 100%);
+    overflow-x: hidden;
+}
+
+section {
+    height: 100%;
+    padding-top: 50px;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    /* background: rgba(0, 0, 0, 1); */
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-container {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px;
+}
+
+.pages {
+    font-weight: lighter;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+main {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+}
+
+.logo {
+    height: 30px;
+    width: 50px;
+    object-fit: contain;
+}
