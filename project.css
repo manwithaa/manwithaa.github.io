@@ -1,0 +1,45 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    height: 80%;
+}
+
+.card {
+    display: grid;
+    grid-template-areas: 'title title'
+    'desc desc'
+    'tech more';
+    background: black;
+    width: 75%;
+    height: 60%;
+    color: white;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.title {
+    grid-area: title;
+}
+
+.description {
+    grid-area: desc;
+    text-overflow: ellipsis;
+    overflow: scroll;
+    text-align: left;
+}
+
+.tech {
+    grid-area: tech;
+}
+
+.more {
+    grid-area: more;
+}
+
+/*media queries*/
+@media screen and (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+        
+}
