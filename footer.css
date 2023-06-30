@@ -1,0 +1,130 @@
+#footer {
+   display: flex;
+   flex-direction: column;
+   width: 100vw;
+   height: 90vh;
+}
+
+.contact-container {
+   display: flex;
+   width: 100%;
+   height: 100%;
+
+}
+
+.contact-me {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 12px 20px;
+   align-items: center;
+   gap: 10px;
+}
+
+form h3 {
+   color: white;
+   font-family: 'Outfit', sans-serif;
+   font-weight: 400;
+   width: 70%;
+}
+
+.name-email {
+   display: flex;
+   gap: 10px;
+   width: 70%;
+}
+
+.text-box {
+   width: 70%;
+   padding: 10px 13px;
+   font-size: 17px;
+   color: white;
+   border: 0;
+   background: rgba(255, 255, 255, 0.3);
+}
+
+.text-box::placeholder {
+   color: rgb(255, 255, 255);
+   font-family: 'Outfit', sans-serif;
+}
+
+.message {
+   display: flex;
+   width: 100%;
+   justify-content: center;
+}
+
+textarea {
+   resize: none;
+   width: 70%;
+   box-sizing: border-box;
+   padding: 10px;
+   border: 0;
+   background: rgba(255, 255, 255, 0.3);
+   font-family: 'Outfit', sans-serif;
+   font-size: 15px;
+   color: white;
+}
+
+textarea::placeholder {
+   color: rgb(255, 255, 255);
+   font-size: 15px;
+}
+
+.submit-btn {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.send-btn {
+   display: flex;
+   box-sizing: border-box;
+   padding: 8px 10px;
+   width: 18%;
+   justify-content: center;
+   font-size: 17px;
+   background: rgb(255, 255, 255, .8);
+   border: 0;
+   border-radius: 3px;
+}
+
+.social-media {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 95%;
+   justify-content: center;
+   align-items: center;
+}
+
+.info {
+   color: rgb(163, 163, 163);
+   text-align: center;
+   font-size: 25px;
+   width: 80%;
+}
+
+.follow {
+   color: aliceblue;
+   text-align: center;
+   font-size: 30px;
+   font-family: 'Rochester', cursive;
+   padding-top: 80px;
+}
+
+.social-icons {
+   justify-content: center;
+   display: flex;
+   gap: 15px;
+   font-size: 40px;
+   padding-top: 25px;
+}

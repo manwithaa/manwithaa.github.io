@@ -42,9 +42,16 @@ nav {
     justify-content: center;
     /* background: rgba(0, 0, 0, 1); */
     color: rgb(255, 255, 255);
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 1;
+    transition: background-color 0.4s ease-in-out;
+}
+
+nav.scrolled {
+    background: black;
+    opacity: 0.98;
+    position: fixed;
 }
 
 .nav-container {
@@ -63,6 +70,11 @@ nav {
 
 a {
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: color 0.4s ease-in-out;
+}
+
+nav.scrolled a {
     color: rgb(255, 255, 255);
 }
 

@@ -12,6 +12,8 @@
  .photo-gallery {
     display: flex;
     gap: 20px;
+    max-height: 80vh;
+    overflow: scroll;
 }
 
 .column {
