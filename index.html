@@ -160,16 +160,22 @@
       <div class="contact-container">
         <div class="contact-me">
           <form action="https://formsubmit.co/780dba64107436909e0036917ef7b850" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display: none;">
+
+            <!-- Disable Captcha -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://manwithaa.github.io/">
             <h3>Send a message:</h3>
             <div class="name-email">
-              <input type="text" name="name" class="text-box" placeholder="Name" required>
-              <input type="text" name="email" class="text-box" placeholder="Email" required>
+              <input type="text" name="Name" class="text-box" placeholder="Name" required>
+              <input type="text" name="Email" class="text-box" placeholder="Email" required>
             </div>
             <div class="message">
-              <textarea name="message" rows="10" placeholder="Message" required></textarea>
+              <textarea name="Message" rows="10" placeholder="Message" required></textarea>
             </div>
             <div class="submit-btn">
-              <input type="submit" name="submit" class="send-btn" value="Send">
+              <input type="submit" class="send-btn" value="Send">
             </div>
           </form>
         </div>
