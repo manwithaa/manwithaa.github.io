@@ -26,8 +26,8 @@ html {
 body {
     height: 100vh;
     font-family: 'Outfit', sans-serif;
-    background: rgb(48, 34, 93);
-    background: linear-gradient(90deg, rgba(48, 34, 93, 1) 0%, rgba(19, 18, 60, 1) 50%, rgba(5, 4, 25, 1) 100%);
+    background: #191514;
+    color: #f8f8f8;
     overflow-x: hidden;
 }
 
@@ -48,24 +48,24 @@ nav {
     transition: background-color 0.4s ease-in-out;
 }
 
-nav.scrolled {
+/* nav.scrolled {
     background: black;
     opacity: 0.98;
     position: fixed;
-}
+} */
 
 .nav-container {
     width: 96%;
     display: flex;
     justify-content: space-between;
-    padding: 8px 0px;
+    padding: 18px 0px;
 }
 
 .pages {
+    font-size: 21px;
     font-weight: lighter;
     display: flex;
-    align-items: center;
-    gap: 25px;
+    gap: 30px;
 }
 
 a {
@@ -88,4 +88,5 @@ main {
     height: 30px;
     width: 50px;
     object-fit: contain;
+    
 }
