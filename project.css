@@ -1,8 +1,26 @@
+#projects {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.title-project {
+    z-index: 1;
+    position: absolute;
+    top: 4%;
+    right: 12%;
+    font-size: 75px;
+    font-weight: bolder;
+}
 .cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
     place-items: center;
-    height: 80%;
+    height: 50%;
+    width: 75%;
+    gap: 30px;
+    margin: auto;
 }
 
 .card {
@@ -10,30 +28,83 @@
     grid-template-areas: 'title title'
     'desc desc'
     'tech more';
-    background: black;
-    width: 75%;
-    height: 60%;
     color: white;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 6px;
+    border: 3.5px solid #e74432;
+    border-radius: 25px;
+    box-sizing: border-box;
+    row-gap: 5px;
+    column-gap: 5px;
+    height: 100%;
 }
 
-.title {
+.card-title {
+    display: flex;
     grid-area: title;
+    text-align: center;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    color: #f6f8e0;
+    font-weight: 500;
 }
 
 .description {
+    display: flex;
+    align-items: center;
     grid-area: desc;
     text-overflow: ellipsis;
-    overflow: scroll;
+    overflow: hidden;
     text-align: left;
+    padding: 0px 10px;
+    color: #f6f8e0;
 }
 
 .tech {
+    display: flex;
     grid-area: tech;
+}
+
+.tech-icons {
+    display: flex;
+    align-items: center;
+    border: 2px solid #e74432;
+    border-radius: 50px;
+    color: #f6f8e0;
+    display: inline-flex;
+    box-sizing: border-box;
+    font-size: 22px;
+    height: 40px;
+    width: 40px;
+    margin: 0 6px;
+    padding: 10px;
+    justify-content: center;
 }
 
 .more {
     grid-area: more;
+}
+
+.btn-more {
+    display: flex;
+    box-sizing: border-box;
+    border: 1px solid #f6f8e0;
+    background: #f6f8e0;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 7px 30px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+    justify-self: right;
+    margin-right: 25px;
+}
+
+.btn-more a {
+    color: black;
 }
 
 /*media queries*/
