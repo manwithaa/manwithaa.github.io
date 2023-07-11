@@ -1,12 +1,21 @@
-.container {
+#designs {
+    position: relative;
+}
+.container-designs {
     max-width: 1224px;
     width: 90%;
     margin: auto;
     padding: 40px 0;
 }
 
-.title {
+.title-designs {
     margin-bottom: 2rem;
+    z-index: 1;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+    font-size: 75px;
+    font-weight: bolder;
 }
 
  .photo-gallery {
@@ -14,6 +23,7 @@
     flex-direction: column;
     justify-content: space-between;
     height: 70vh;
+    padding-top: 55px;
     overflow-x: scroll;
     overflow-y: hidden;
 }

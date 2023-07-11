@@ -6,12 +6,31 @@
     gap: 50px;
 }
 
-.about-me {
+.big-about-me {
+    z-index: -5;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    left: 12%;
+    top: -19%;
+    font-size: 230px;
+    text-align: center;
+    opacity: 0.5;
+    transform: scale(1,1.1);
+}
+
+.big-about-me p {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.about-me h1 {
     position: absolute;
     top: 4%;
-    left: 10%;
-    font-size: 50px;
-    font-weight: bolder;
+    left: 13%;
+    font-size: 95px;
+    font-weight: 600;
     z-index: 1;
 }
 

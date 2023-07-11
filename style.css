@@ -27,7 +27,7 @@ body {
     height: 100vh;
     font-family: 'Outfit', sans-serif;
     background: #191514;
-    color: #f8f8f8;
+    color: #f6f8e0;
     overflow-x: hidden;
 }
 
@@ -35,7 +35,7 @@ body {
     background-image: url(/gallery/5000WebfolioPattern-01.png);
     opacity: 0.3;
     width: 100vw;
-    height: 550vh;
+    height: 530vh;
     top:-200px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
