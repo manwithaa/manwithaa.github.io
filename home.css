@@ -5,12 +5,13 @@
     justify-content: center;
 }
 
-.home-text {
-    width: 100%;
-    height: 87%;
-    color: #ffffff;
+/* LEFT SIDE */
+
+.home-left {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 93%;
     justify-content: center;
     text-align: left;
     gap: 3px;
@@ -18,36 +19,25 @@
     line-height: normal;
 }
 
-.home-text h3 {
-    font-weight: lighter;
+.home-left h3 {
     font-size: 35px;
+    font-weight: lighter;
     letter-spacing: 0.5px;
 }
 
 .home-name {
-    color: #ef4432;
-    font-size: 70px;
+    color: var(--color-orange);
+    font-size: 75px;
     font-weight: bold;
     text-indent: -2px;
     letter-spacing: -2px;
-    padding: 0 !important;
-    margin: 0 !important;
 }
 
-.home-img {
-    width: 100%;
-    height: 90%;
+/* BUTTONS */
+.btn-space {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 70px;
-    font-weight: bold;
-    color: #f6f8e0;
-}
-
-.home-img img {
-    max-width: 50vw;
-    max-height: 80vh;
+    padding-top: 10px;
+    gap: 20px;
 }
 
 .btn {
@@ -55,26 +45,42 @@
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
+    border: 1px solid var(--color-cream);
+    transition: var(--transition);
 }
 
 .btn-resume {
-    border: 1px solid #f8f8f8;
     background: transparent;
-    color: #ffffff;
-    box-sizing: border-box;
+    color: var(--color-cream);
 }
 
 .btn-contact {
-    box-sizing: border-box;
-    border: 1px solid #f8f8f8;
+    background: var(--color-cream);
 }
 
 .btn-contact a {
-    color: black;
+    color: var(--color-bg);
 }
 
-.btn-space {
-    display: flex;
-    padding-top: 10px;
-    gap: 20px;
+.btn:hover {
+    border: 1px solid var(--color-orange);
+    background: var(--color-orange);
+    color: var(--color-cream);
 }
+
+.btn:hover a {
+    color: var(--color-cream);
+}
+
+/* RIGHT SIDE */
+.home-right {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/* MEDIA QUERIES */

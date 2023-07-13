@@ -1,6 +1,6 @@
 .circle {
-    background: transparent;
-    border: 3px solid #e74432;
+    background: var(--color-bg);
+    border: 3px solid var(--color-orange);
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -8,23 +8,111 @@
     position: absolute;
 }
 
+.line-left {
+    position: absolute;
+    left: 6.3%;
+    display: flex;
+    background: var(--color-orange);
+    height: 100%;
+    transform: translateY(-50px);
+    width: 3px;
+}
+
+.line-right {
+    position: absolute;
+    right: 6.3%;
+    display: flex;
+    background: var(--color-orange);
+    height: 100%;
+    transform: translateY(-25px) ;
+    width: 3px;
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: calc(100% - 12.6%);
+    display: flex;
+    background: var(--color-orange);
+    z-index: 5;
+    left: 6.3%;
+}
+
+.horizontal-line-last {
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: calc(100% - 9.4%);
+    display: flex;
+    background: var(--color-orange);
+    z-index: 5;
+    left: 6.3%;
+}
+
+.line-right-home {
+    position: absolute;
+    right: 6.3%;
+    display: flex;
+    background: var(--color-orange);
+    height: 50%;
+    transform: translateY(90%) ;
+    width: 3px;
+}
+.line-middle-home {
+    z-index: 0;
+    position: absolute;
+    right: 6.2%;
+    top: 49.9%;
+    display: flex;
+    background: var(--color-orange);
+    height: 3px;
+    transform: translateY(18px);
+    width: 54%;
+}
+.footer-line-vertical {
+    position: absolute;
+    right: 3.1%;
+    display: flex;
+    background: var(--color-orange);
+    height:  calc(72% - 25px);
+    transform: translateY(-50px);
+    width: 3px;
+}
+
+.footer-line-horizontal {
+    z-index: 0;
+    position: absolute;
+    right: 3.1%;
+    top: calc(72% + 22.5px);
+    display: flex;
+    background: var(--color-orange);
+    height: 3px;
+    transform: translateY(-50px);
+    width: 300px;
+}
+
 .circle-home {
-    left: 95%;
+    right: 5%;
     top: 50%;
 }
 
 .circle-about {
-
+    left: 5%;
+    top: 50%;
 }
 
 .circle-projects {
-
+    right: 5%;
+    top: 50%;
 }
 
 .circle-designs {
-
+    left: 5%;
+    top: 50%;
 }
 
 .circle-contact {
-    
+    right: 5%;
+    top: 50%;
 }

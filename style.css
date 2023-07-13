@@ -1,104 +1,128 @@
+/* UNIVERSAL CSS PROPERTIES */
+
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
 }
 
-/* width */
+:root {
+    --color-bg: #191514;
+    --color-orange: #E74432;
+    --color-cream: #F6F8E0;
+    --color-white: #F8F8F8;
+
+    --transition: all 300ms ease-in-out;
+
+    --container-width-lg: 80%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+/* SCROLLBAR */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
+    height: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
-    border-radius: 0px;
+    border-radius: 2px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(178, 232, 239);
-    border-radius: 0px;
+    background: #971708;
+    border-radius: 2px;
 }
 
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-orange);
+}
+
+/* HOME CSS */
 html {
     scroll-behavior: smooth;
+    font-size: 12px;
 }
 
 body {
     height: 100vh;
     font-family: 'Outfit', sans-serif;
-    background: #191514;
-    color: #f6f8e0;
+    background: var(--color-bg);
+    color: var(--color-cream);
     overflow-x: hidden;
 }
 
 .background {
+    position: absolute;
+    top: -200px;
+    z-index: -10;
     background-image: url(/gallery/5000WebfolioPattern-01.png);
-    opacity: 0.3;
-    width: 100vw;
-    height: 530vh;
-    top:-200px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    position: absolute;
-    z-index: -5;
+    opacity: 0.4;
+    width: 100vw;
+    height: 450vh;
 }
 
+
 section {
+    position: relative;
     height: 100%;
     padding-top: 50px;
 }
 
 nav {
-    width: 100vw;
     display: flex;
-    justify-content: center;
-    /* background: rgba(0, 0, 0, 1); */
-    color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
+    width: 100vw;
+    justify-content: center;
+    color: var(--color-white);
     transition: background-color 0.4s ease-in-out;
 }
 
-/* nav.scrolled {
-    background: black;
-    opacity: 0.98;
+nav.scrolled {
     position: fixed;
-} */
+    background: rgba(25, 21, 20, 0.8);
+}
 
 .nav-container {
-    width: 96%;
     display: flex;
+    width: 96%;
     justify-content: space-between;
-    padding: 18px 0px;
+    padding: 10px 0px;
 }
 
 .pages {
-    font-size: 21px;
-    font-weight: lighter;
     display: flex;
     gap: 30px;
+    font-size: 21px;
+    font-weight: lighter;
 }
 
-a {
+nav a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    transition: color 0.4s ease-in-out;
+    color: var(--color-white);
+    transition: var(--transition);
 }
 
-nav.scrolled a {
-    color: rgb(255, 255, 255);
-}
-
-main {
-    position: absolute;
-    top: 0px;
-    bottom: 0;
+nav a:hover {
+    color: var(--color-cream);
 }
 
 .logo {
     height: 30px;
     width: 50px;
-    object-fit: contain;
-    
+    object-fit: cover;
+}
+
+main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }

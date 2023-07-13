@@ -1,14 +1,16 @@
 #projects {
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
+
 }
 
-.title-project {
+.projects-title {
     z-index: 1;
     position: absolute;
     top: 4%;
-    right: 12%;
+    right: 10%;
     font-size: 75px;
     font-weight: bolder;
 }
@@ -20,7 +22,6 @@
     height: 50%;
     width: 75%;
     gap: 30px;
-    margin: auto;
 }
 
 .card {
@@ -34,7 +35,6 @@
     padding: 6px;
     border: 3.5px solid #e74432;
     border-radius: 25px;
-    box-sizing: border-box;
     row-gap: 5px;
     column-gap: 5px;
     height: 100%;
@@ -51,7 +51,7 @@
     font-weight: 500;
 }
 
-.description {
+.card-description {
     display: flex;
     align-items: center;
     grid-area: desc;
@@ -74,7 +74,6 @@
     border-radius: 50px;
     color: #f6f8e0;
     display: inline-flex;
-    box-sizing: border-box;
     font-size: 22px;
     height: 40px;
     width: 40px;
@@ -89,7 +88,6 @@
 
 .btn-more {
     display: flex;
-    box-sizing: border-box;
     border: 1px solid #f6f8e0;
     background: #f6f8e0;
     border-radius: 25px;
@@ -107,10 +105,4 @@
     color: black;
 }
 
-/*media queries*/
-@media screen and (max-width: 600px) {
-    .cards {
-        grid-template-columns: 1fr;
-    }
-        
-}
+/* MEDIA QUERIES */

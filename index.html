@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Manwitha Anchan</title>
+  <link rel="icon" type="image/x-icon" href="/photos/fav.ico">
+  <!-- CSS -->
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./home.css">
   <link rel="stylesheet" href="./about.css">
@@ -13,7 +15,7 @@
   <link rel="stylesheet" href="./design.css">
   <link rel="stylesheet" href="./footer.css">
   <link rel="stylesheet" href="./line.css">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -21,12 +23,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/5e6308c469.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-  <div class="background">
-  </div>
+  <div class="background"></div>
   <!-- Navbar -->
   <nav>
     <div class="nav-container">
@@ -34,18 +37,23 @@
         <img class="logo" src="/photos/Logo.png">
       </div>
       <div class="pages">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#designs">Designs</a>
-        <a href="#footer">Contact</a>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#designs">DESIGNS</a>
+        <a href="#footer">CONTACT</a>
       </div>
     </div>
   </nav>
   <main>
-    <!-- Home -->
+    <!-- HOME -->
     <section id="home">
-      <div class="home-text">
+      <!-- GUIDE DESIGN -->
+      <div class="line-right-home"></div>
+      <div class="line-middle-home"></div>
+      <div class="circle circle-home"></div>
+      <!-- HOME LEFT SIDE -->
+      <div class="home-left">
         <h3>Hi, I'm</h3>
         <div class="home-name">Manwitha Anchan</div>
         <div class="btn-space">
@@ -53,92 +61,107 @@
           <button class="btn btn-contact"><a href="#footer">Contact</a></button>
         </div>
       </div>
-      <div class="home-img">
+      <!-- HOME RIGHT SIDE -->
+      <div class="home-right">
         Frontend <br> Developer
       </div>
-      <div class="circle circle-home"></div>
     </section>
-    <!-- About -->
+
+    <!-- ABOUT -->
     <section id="about">
-      <div class="about-text">
-        <p>
-          Welcome to my portfolio! I'm a recent female IT engineering graduate with a passion for games and design. With
-          a bachelor's degree in Engineering, I bring a strong technical foundation. I love exploring the intersection
-          of technology and design, creating immersive experiences. My skills include programming, databases, and
-          software development. My portfolio showcases projects that blend functionality and aesthetics. Let's
-          collaborate on cutting-edge IT advancements. Explore my work and reach out for inquiries. Let's make an impact
-          together!
-        </p>
-      </div>
+      <!-- GUIDE DESIGN -->
+      <div class="line-left"></div>
+      <div class="horizontal-line"></div>
+      <div class="circle circle-about"></div>
       <div class="big-about-me">
         <p>ABOUT ME</p>
       </div>
       <div class="about-me">
         <h1>ABOUT ME</h1>
       </div>
-      <div class="right-section">
+      <!-- ABOUT LEFT -->
+      <div class="about-left">
+        <p>
+          Welcome to my portfolio! I'm a recent IT engineering graduate with a passion for games and design.
+          With a bachelor's degree in Engineering, I bring a strong technical foundation. I love exploring the
+          intersection
+          of technology and design, creating immersive experiences. My skills include programming, databases, and
+          software development. My portfolio showcases projects that blend functionality and aesthetics. Let's
+          collaborate on cutting-edge IT advancements. Explore my work and reach out for inquiries. Let's make an
+          impact
+          together!
+        </p>
+      </div>
+
+      <!-- ABOUT RIGHT -->
+      <div class="about-right">
         <h2>TECH STACK</h2>
-        <div class="skills__content">
-          <article class="skill__details">
-            <div class="skill__icon">
+        <div class="skills-container">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-brands fa-html5"></i>
             </div>
-            <small class="skill__name">HTML</small>
+            <small class="skill-name">HTML</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-brands fa-css3-alt"></i>
             </div>
-            <small class="skill__name">CSS</small>
+            <small class="skill-name">CSS</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
-              <i class="fa-brands fa-square-js"></i>
+          <article class="skill-box">
+            <div class="skill-icon">
+              <i class="fa-brands fa-js"></i>
             </div>
-            <small class="skill__name">JavaScript</small>
+            <small class="skill-name">JavaScript</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-brands fa-react"></i>
             </div>
-            <small class="skill__name">React</small>
+            <small class="skill-name">React</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-brands fa-python"></i>
             </div>
-            <small class="skill__name">Python</small>
+            <small class="skill-name">Python</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-brands fa-java"></i>
             </div>
-            <small class="skill__name">Java</small>
+            <small class="skill-name">Java</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-brands fa-aws"></i>
             </div>
-            <small class="skill__name">AWS</small>
+            <small class="skill-name">AWS</small>
           </article>
-          <article class="skill__details">
-            <div class="skill__icon">
+          <article class="skill-box">
+            <div class="skill-icon">
               <i class="fa-solid fa-database"></i>
             </div>
-            <small class="skill__name">MySQL</small>
+            <small class="skill-name">MySQL</small>
           </article>
         </div>
       </div>
-      </div>
-      <div class="circle circle-about"></div>
+
     </section>
-    <!-- Projects -->
+    <!-- PROJECTS -->
     <section id="projects">
-      <h1 class="title-project">PROJECTS</h1>
+
+      <!-- GUIDE DESIGN -->
+      <div class="line-right"></div>
+      <div class="horizontal-line"></div>
+      <div class="circle circle-projects"></div>
+      <!-- PROJECT CARDS -->
+      <h1 class="projects-title">PROJECTS</h1>
       <div class="cards">
         <div class="card">
           <div class="card-title">Webfolio</div>
-          <div class="description">A visually stunning online portfolio that showcases my skills, experiences, and
+          <div class="card-description">A visually stunning online portfolio that showcases my skills, experiences, and
             achievements in a captivating and interactive manner. Created with meticulous attention to detail, this
             project demonstrates my proficiency in front-end web development. Through clean and elegant HTML structure,
             CSS styling, and JavaScript functionality, I have crafted a seamless user experience.</div>
@@ -150,14 +173,14 @@
               <i class="fa-brands fa-css3-alt"></i>
             </div>
             <div class="tech-icons">
-              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-js"></i>
             </div>
           </div>
           <button class="btn-more"><a href="#">More</a></button>
         </div>
         <div class="card">
           <div class="card-title">Webfolio</div>
-          <div class="description">A visually stunning online portfolio that showcases my skills, experiences, and
+          <div class="card-description">A visually stunning online portfolio that showcases my skills, experiences, and
             achievements in a captivating and interactive manner. Created with meticulous attention to detail, this
             project demonstrates my proficiency in front-end web development. Through clean and elegant HTML structure,
             CSS styling, and JavaScript functionality, I have crafted a seamless user experience.</div>
@@ -169,14 +192,14 @@
               <i class="fa-brands fa-css3-alt"></i>
             </div>
             <div class="tech-icons">
-              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-js"></i>
             </div>
           </div>
           <button class="btn-more"><a href="#">More</a></button>
         </div>
         <div class="card">
           <div class="card-title">Webfolio</div>
-          <div class="description">A visually stunning online portfolio that showcases my skills, experiences, and
+          <div class="card-description">A visually stunning online portfolio that showcases my skills, experiences, and
             achievements in a captivating and interactive manner. Created with meticulous attention to detail, this
             project demonstrates my proficiency in front-end web development. Through clean and elegant HTML structure,
             CSS styling, and JavaScript functionality, I have crafted a seamless user experience.</div>
@@ -188,20 +211,26 @@
               <i class="fa-brands fa-css3-alt"></i>
             </div>
             <div class="tech-icons">
-              <i class="fa-brands fa-square-js"></i>
+              <i class="fa-brands fa-js"></i>
             </div>
           </div>
           <button class="btn-more"><a href="#">More</a></button>
         </div>
       </div>
-      <div class="circle circle-projects"></div>
     </section>
-    <!-- Designs -->
+
+    <!-- DESIGNS -->
     <section id="designs">
-      <div class="container-designs">
-        <h1 class="title-designs">DESIGNS</h1>
-        <div class="photo-gallery">
-          <div class="column">
+
+      <!-- GUIDE DESIGN -->
+      <div class="horizontal-line"></div>
+      <div class="line-left"></div>
+      <div class="circle circle-designs"></div>
+      <!-- HORIZONTAL MASONRY -->
+      <div class="designs-container">
+        <h1 class="designs-title">DESIGNS</h1>
+        <div class="designs-gallery">
+          <div class="row">
             <div class="photo">
               <img src="/gallery/2.jpg">
             </div>
@@ -215,7 +244,8 @@
               <img src="/gallery/3.jpg">
             </div>
           </div>
-          <div class="column">
+
+          <div class="row">
             <div class="photo">
               <img src="/gallery/6.jpg">
             </div>
@@ -234,13 +264,18 @@
           </div>
         </div>
       </div>
-      <div class="circle circle-designs"></div>
     </section>
-    <!-- Footer -->
+
+    <!-- FOOTER -->
     <section id="footer">
-      <h1 class="title-contact">CONTACT ME</h1>
+      <!-- GUIDE DESIGN -->
+      <div class="horizontal-line-last"></div>
+      <div class="footer-line-vertical"></div>
+      <div class="footer-line-horizontal"></div>
+      <!-- FORM -->
+      <h1 class="contact-title">CONTACT ME</h1>
       <div class="contact-container">
-        <div class="contact-me">
+        <div class="contact-form">
           <form action="https://formsubmit.co/780dba64107436909e0036917ef7b850" method="POST">
             <!-- Honeypot -->
             <input type="text" name="_honey" style="display: none;">
@@ -261,19 +296,20 @@
             </div>
           </form>
         </div>
+
+        <!-- RIGHT SIDE -->
         <div class="social-media">
-          <div class="info">
+          <div class="contact-text">
             To know more about me and my work you can check out my social media below
           </div>
-          <div class="follow">Follow me</div>
-          <div class="social-icons">
-            <a href="https://www.linkedin.com/in/manwitha/"><i class="fa-brands fa-linkedin" style="color: #a3a3a3;"></i></a>
-            <a href="manwithaphotos@gmail.com"><i class="fa-solid fa-envelope" style="color: #a3a3a3;"></i></a>
-            <a href="https://github.com/manwithaa"><i class="fa-brands fa-github" style="color: #a3a3a3;"></i></a>
+          <div class="contact-follow">Follow me</div>
+          <div class="contact-socials">
+            <a href="https://www.linkedin.com/in/manwitha/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="manwithaphotos@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://github.com/manwithaa"><i class="fa-brands fa-github"></i></a>
           </div>
         </div>
       </div>
-      <div class="circle circle-contact"></div>
     </section>
   </main>
   <script src="index.js"></script>

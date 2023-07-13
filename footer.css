@@ -2,14 +2,16 @@
    display: flex;
    flex-direction: column;
    width: 100vw;
-   height: 75vh;
+   height: 60%;
    position: relative;
+   background-color: var(--color-bg);
+   /* border-top: 3px solid var(--color-orange); */
 }
 
-.title-contact {
+.contact-title {
    z-index: 1;
    position: absolute;
-   top: 2%;
+   top: 0%;
    left: 8%;
    font-size: 75px;
    font-weight: bolder;
@@ -22,7 +24,7 @@
 
 }
 
-.contact-me {
+.contact-form {
    width: 100%;
    height: 100%;
    display: flex;
@@ -75,7 +77,6 @@ form h3 {
 textarea {
    resize: none;
    width: 70%;
-   box-sizing: border-box;
    padding: 10px;
    border: 0;
    background: rgba(255, 255, 255, 0.3);
@@ -97,7 +98,6 @@ textarea::placeholder {
 
 .send-btn {
    display: flex;
-   box-sizing: border-box;
    padding: 8px 10px;
    width: 18%;
    justify-content: center;
@@ -117,14 +117,14 @@ textarea::placeholder {
    align-items: center;
 }
 
-.info {
+.contact-text {
    color: rgb(163, 163, 163);
    text-align: center;
    font-size: 25px;
    width: 80%;
 }
 
-.follow {
+.contact-follow {
    color: aliceblue;
    text-align: center;
    font-size: 30px;
@@ -132,10 +132,28 @@ textarea::placeholder {
    padding-top: 80px;
 }
 
-.social-icons {
-   justify-content: center;
+.contact-socials a {
    display: flex;
-   gap: 15px;
-   font-size: 40px;
-   padding-top: 25px;
+   align-items: center;
+   border: 2px solid #e74432;
+   border-radius: 50px;
+   color: #f6f8e0;
+   display: inline-flex;
+   font-size: 22px;
+   height: 45px;
+   width: 45px;
+   margin: 0 6px;
+   padding: 15px;
+   justify-content: center;
+   background: var(--color-bg);
+   transition: var(--transition);
+
+}
+
+.contact-socials a:hover {
+   background: var(--color-orange);
+}
+
+.contact-socials {
+   z-index: 2;
 }
